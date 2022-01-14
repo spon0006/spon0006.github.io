@@ -55,8 +55,59 @@ table {
                     Default styles
 ****************************************************/
 
-html {
-    background-color: aquamarine;
-    color: darkgreen;
+html{
+    background-color:aquamarine;
+    font-size:18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+body{
+    line-height:1.6;
+    width:800px;
+    /* two values on margin means top-bottom, left-right
+    the space between the two values means you are applying all the values */
+    margin:0 auto; /* this will centre the site in the browser window */
+    background-color:blanchedalmond;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* to target an ID, use the # before the ID name */
+#reallyBig{
+    font-size:48px;
+}
+
+/* to target a class, use the . before the classname */
+.larger{
+    font-size:24px;
+}
+
+/* target only the paragraphs that are inside the main tag */
+main p{
+    color:red;
+}
+
+/* CSS box model includes margin, border, and padding:
+    margin is outside the element and pushes other elements away
+    padding is inside the element and pushes content away from the element's edge
+    border is in between the two */
+main{
+    background-color:cadetblue;
+    margin:10px; /* one value means apply to all sides */
+    padding:15px;
+    border: 2px solid black;
+}
+
+main img{
+    width: 30%;
+    float: left;
+    margin-right: 10px;
+
+}
+
+
 
